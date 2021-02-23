@@ -14,11 +14,13 @@ type
   TForm1 = class(TForm)
     ButtonC: TButton;
     ButtonM: TButton;
+    ButtonB: TButton;
     ButtonY: TButton;
     ButtonK: TButton;
     ButtonRo: TButton;
     EditC: TEdit;
     EditM: TEdit;
+    EditB: TEdit;
     EditY: TEdit;
     EditK: TEdit;
     EditRo: TEdit;
@@ -27,6 +29,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
+    Label6: TLabel;
     procedure ButtonCClick(Sender: TObject);
     procedure ButtonKClick(Sender: TObject);
     procedure ButtonMClick(Sender: TObject);
