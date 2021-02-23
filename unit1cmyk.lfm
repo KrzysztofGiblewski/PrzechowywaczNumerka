@@ -1,0 +1,292 @@
+object Form1: TForm1
+  Left = 879
+  Height = 299
+  Top = 154
+  Width = 316
+  AutoSize = True
+  BorderStyle = bsSingle
+  BorderWidth = 5
+  Caption = 'Numerki CMYK'
+  ClientHeight = 299
+  ClientWidth = 316
+  FormStyle = fsSystemStayOnTop
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 9
+    Height = 29
+    Top = 0
+    Width = 17
+    Caption = 'C'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlue
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 9
+    Height = 29
+    Top = 24
+    Width = 21
+    Caption = 'M'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clFuchsia
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 9
+    Height = 29
+    Top = 48
+    Width = 15
+    Caption = 'Y'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clYellow
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 9
+    Height = 29
+    Top = 72
+    Width = 17
+    Caption = 'K'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 9
+    Height = 15
+    Top = 117
+    Width = 60
+    Caption = 'Rozjaśniacz'
+    ParentColor = False
+  end
+  object EditC: TEdit
+    Left = 31
+    Height = 21
+    Top = 5
+    Width = 185
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonCClick
+    ParentFont = False
+    TabOrder = 0
+    Text = 'CCCCC'
+  end
+  object EditM: TEdit
+    Left = 31
+    Height = 21
+    Top = 26
+    Width = 185
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonMClick
+    ParentFont = False
+    TabOrder = 1
+    Text = 'MMMMM'
+  end
+  object EditY: TEdit
+    Left = 31
+    Height = 21
+    Top = 47
+    Width = 185
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonYClick
+    ParentFont = False
+    TabOrder = 2
+    Text = 'YYYYY'
+  end
+  object EditK: TEdit
+    Left = 31
+    Height = 21
+    Top = 68
+    Width = 185
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonKClick
+    ParentFont = False
+    TabOrder = 3
+    Text = 'KKKKK'
+  end
+  object EditRo: TEdit
+    Left = 76
+    Height = 21
+    Top = 110
+    Width = 140
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonRoClick
+    ParentFont = False
+    TabOrder = 4
+    Text = 'RORORO'
+  end
+  object ButtonC: TButton
+    Left = 216
+    Height = 23
+    Top = 3
+    Width = 100
+    Caption = 'Kopiuj nr cyjan'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonCClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object ButtonM: TButton
+    Left = 216
+    Height = 23
+    Top = 24
+    Width = 100
+    Caption = 'Kopiuj nr magenta'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonMClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object ButtonY: TButton
+    Left = 216
+    Height = 23
+    Top = 45
+    Width = 100
+    Caption = 'Kopiuj nr żółty'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonYClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object ButtonK: TButton
+    Left = 216
+    Height = 23
+    Top = 66
+    Width = 100
+    Caption = 'Kopiuj nr czarny'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonKClick
+    ParentFont = False
+    TabOrder = 8
+  end
+  object ButtonRo: TButton
+    Left = 216
+    Height = 23
+    Top = 108
+    Width = 100
+    Caption = 'Kopiuj ten nr'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonRoClick
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Label6: TLabel
+    Left = 9
+    Height = 26
+    Top = 96
+    Width = 14
+    Caption = 'B'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Arial Nova'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object EditB: TEdit
+    Left = 31
+    Height = 21
+    Top = 89
+    Width = 185
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonRoClick
+    ParentFont = False
+    TabOrder = 10
+    Text = 'RORORO'
+  end
+  object ButtonB: TButton
+    Left = 216
+    Height = 23
+    Top = 87
+    Width = 100
+    Caption = 'Kopiuj biały'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonRoClick
+    ParentFont = False
+    TabOrder = 11
+  end
+end

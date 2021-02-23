@@ -1,0 +1,174 @@
+object Form1: TForm1
+  Left = 879
+  Height = 299
+  Top = 154
+  Width = 351
+  AutoSize = True
+  BorderStyle = bsSingle
+  BorderWidth = 5
+  Caption = 'Numerki CMYK'
+  ClientHeight = 299
+  ClientWidth = 351
+  FormStyle = fsSystemStayOnTop
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 9
+    Height = 29
+    Top = 0
+    Width = 17
+    Caption = 'C'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlue
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 9
+    Height = 29
+    Top = 27
+    Width = 21
+    Caption = 'M'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clFuchsia
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 11
+    Height = 29
+    Top = 52
+    Width = 15
+    Caption = 'Y'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clYellow
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 11
+    Height = 29
+    Top = 81
+    Width = 17
+    Caption = 'K'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 15
+    Height = 15
+    Top = 120
+    Width = 60
+    Caption = 'Rozjaśniacz'
+    ParentColor = False
+  end
+  object EditC: TEdit
+    Left = 31
+    Height = 23
+    Top = 4
+    Width = 185
+    OnClick = ButtonCClick
+    TabOrder = 0
+    Text = 'CCCCC'
+  end
+  object EditM: TEdit
+    Left = 31
+    Height = 23
+    Top = 31
+    Width = 185
+    OnClick = ButtonMClick
+    TabOrder = 1
+    Text = 'MMMMM'
+  end
+  object EditY: TEdit
+    Left = 31
+    Height = 23
+    Top = 58
+    Width = 185
+    OnClick = ButtonYClick
+    TabOrder = 2
+    Text = 'YYYYY'
+  end
+  object EditK: TEdit
+    Left = 31
+    Height = 23
+    Top = 85
+    Width = 185
+    OnClick = ButtonKClick
+    TabOrder = 3
+    Text = 'KKKKK'
+  end
+  object EditRo: TEdit
+    Left = 76
+    Height = 23
+    Top = 112
+    Width = 140
+    OnClick = ButtonRoClick
+    TabOrder = 4
+    Text = 'RORORO'
+  end
+  object ButtonC: TButton
+    Left = 215
+    Height = 25
+    Top = 4
+    Width = 103
+    Caption = 'Kopiuj nr cyjan'
+    OnClick = ButtonCClick
+    TabOrder = 5
+  end
+  object ButtonM: TButton
+    Left = 215
+    Height = 25
+    Top = 31
+    Width = 103
+    Caption = 'Kopiuj nr magenta'
+    OnClick = ButtonMClick
+    TabOrder = 6
+  end
+  object ButtonY: TButton
+    Left = 215
+    Height = 25
+    Top = 58
+    Width = 103
+    Caption = 'Kopiuj nr żółty'
+    OnClick = ButtonYClick
+    TabOrder = 7
+  end
+  object ButtonK: TButton
+    Left = 215
+    Height = 25
+    Top = 85
+    Width = 103
+    Caption = 'Kopiuj nr czarny'
+    OnClick = ButtonKClick
+    TabOrder = 8
+  end
+  object ButtonRo: TButton
+    Left = 215
+    Height = 25
+    Top = 112
+    Width = 103
+    Caption = 'Kopiuj ten nr'
+    OnClick = ButtonRoClick
+    TabOrder = 9
+  end
+end
