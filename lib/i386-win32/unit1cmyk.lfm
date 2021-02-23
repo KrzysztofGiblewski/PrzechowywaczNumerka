@@ -545,15 +545,15 @@ object Form1: TForm1
   }
   LCLVersion = '2.0.6.0'
   object Label1: TLabel
-    Left = 9
-    Height = 29
-    Top = 0
-    Width = 17
+    Left = 15
+    Height = 20
+    Top = 5
+    Width = 12
     Caption = 'C'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlue
-    Font.Height = -24
-    Font.Name = 'Arial'
+    Font.Height = -16
+    Font.Name = 'Arial Nova'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
@@ -561,15 +561,15 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 9
-    Height = 29
+    Left = 15
+    Height = 20
     Top = 24
-    Width = 21
+    Width = 14
     Caption = 'M'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clFuchsia
-    Font.Height = -24
-    Font.Name = 'Arial'
+    Font.Height = -16
+    Font.Name = 'Arial Nova'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
@@ -577,29 +577,31 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 9
-    Height = 29
-    Top = 48
-    Width = 15
+    Left = 15
+    Height = 20
+    Top = 45
+    Width = 10
     Caption = 'Y'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clYellow
-    Font.Height = -24
-    Font.Name = 'Arial'
+    Font.Height = -16
+    Font.Name = 'Arial Nova'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 9
-    Height = 29
-    Top = 72
-    Width = 17
+    Left = 16
+    Height = 20
+    Top = 69
+    Width = 11
     Caption = 'K'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlack
-    Font.Height = -24
-    Font.Name = 'Arial'
+    Font.Height = -16
+    Font.Name = 'Arial Nova'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
@@ -775,14 +777,14 @@ object Form1: TForm1
     TabOrder = 9
   end
   object Label6: TLabel
-    Left = 9
-    Height = 26
-    Top = 96
-    Width = 14
+    Left = 16
+    Height = 20
+    Top = 89
+    Width = 11
     Caption = 'B'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clWhite
-    Font.Height = -21
+    Font.Height = -16
     Font.Name = 'Arial Nova'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -801,7 +803,7 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonRoClick
+    OnClick = ButtonBClick
     ParentFont = False
     TabOrder = 10
     Text = 'BBBBB'
@@ -818,7 +820,7 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonRoClick
+    OnClick = ButtonBClick
     ParentFont = False
     TabOrder = 11
   end

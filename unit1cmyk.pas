@@ -30,6 +30,7 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
+    procedure ButtonBClick(Sender: TObject);
     procedure ButtonCClick(Sender: TObject);
     procedure ButtonKClick(Sender: TObject);
     procedure ButtonMClick(Sender: TObject);
@@ -60,6 +61,12 @@ begin
 EditC.SelectAll;
 EditC.CopyToClipboard;
 
+end;
+
+procedure TForm1.ButtonBClick(Sender: TObject);
+begin
+  EditB.SelectAll;
+  EditB.CopyToClipboard;
 end;
 
 

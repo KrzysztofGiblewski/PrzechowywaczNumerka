@@ -804,7 +804,7 @@ object Form1: TForm1
     OnClick = ButtonRoClick
     ParentFont = False
     TabOrder = 10
-    Text = 'RORORO'
+    Text = 'BBBBB'
   end
   object ButtonB: TButton
     Left = 216
@@ -818,7 +818,7 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonRoClick
+    OnClick = ButtonBClick
     ParentFont = False
     TabOrder = 11
   end
