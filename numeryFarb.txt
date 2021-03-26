@@ -1,9 +1,9 @@
 Kopiuj C
-97898989989
+4845454
 Kopiuj M
-5656665656
+54545
 Kopiuj Y
-41545454544
+12121212121212
 Kopiuj Czarny
 41545454541
 Kopiuj Biały
@@ -13,11 +13,11 @@ Rozjaśniacz
 Kopiuj Czerwony
 5154554545455
 Kopiuj Zielony
-121212121212
+555554545
 Kopiuj Złoty
-2121212121
+555554545
 Kopiuj Niebieski
-2121212121
+555554545
 Kopiuj Zółty
 2121212121
 Kopiuj Brązowy

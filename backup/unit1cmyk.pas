@@ -5,7 +5,8 @@ unit unit1Cmyk;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ColorBox;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ColorBox,
+  ExtCtrls;
 
 type
 
@@ -27,6 +28,7 @@ type
     ButtonY: TButton;
     ButtonK: TButton;
     ButtonRo: TButton;
+    CheckBox1: TCheckBox;
     EditSzara: TEdit;
     EditCzerwona: TEdit;
     EditZielona: TEdit;
@@ -47,6 +49,7 @@ type
     Label5: TLabel;
     Label6: TLabel;
     Memo1: TMemo;
+    Timer1: TTimer;
     procedure ButtonZapiszNumeryClick(Sender: TObject);
     procedure ButtonCzerwonaClick(Sender: TObject);
     procedure ButtonZaladujNumeryClick(Sender: TObject);
@@ -62,8 +65,10 @@ type
     procedure ButtonMClick(Sender: TObject);
     procedure ButtonRoClick(Sender: TObject);
     procedure ButtonYClick(Sender: TObject);
+    procedure CheckBox1Change(Sender: TObject);
     procedure EditBrazowaChange(Sender: TObject);
     procedure nastepnyPoEnterze(Sender: TObject; var Key: char);
+    procedure Timer1Timer(Sender: TObject);
 
 
   private
@@ -152,13 +157,27 @@ begin
   EditY.SelectAll;
 EditY.CopyToClipboard;
 end;
+
+procedure TForm1.CheckBox1Change(Sender: TObject);
+begin
+  if CheckBox1.Checked=true then
+  Timer1.Enabled:=true
+  else
+  Timer1.Enabled:=false;
+
+end;
+
 procedure TForm1.EditBrazowaChange(Sender: TObject);
 begin
 EditBrazowa.SelectAll;
 EditBrazowa.CopyToClipboard;
 
 end;
-
+procedure TForm1.ButtonRoClick(Sender: TObject);
+begin
+  EditRo.SelectAll;
+EditRo.CopyToClipboard;
+end;
 procedure TForm1.nastepnyPoEnterze(Sender: TObject; var Key: char);
 begin
   if key=#13 then begin
@@ -166,12 +185,9 @@ begin
   selectnext(activecontrol, true, true);
 end;
 end;
-
-
-procedure TForm1.ButtonRoClick(Sender: TObject);
+procedure TForm1.Timer1Timer(Sender: TObject);
 begin
-  EditRo.SelectAll;
-EditRo.CopyToClipboard;
+form1.ShowOnTop;
 end;
 procedure TForm1.ButtonZapiszNumeryClick(Sender: TObject);
 var
