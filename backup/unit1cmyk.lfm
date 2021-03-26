@@ -1,15 +1,18 @@
 object Form1: TForm1
-  Left = 1035
-  Height = 180
-  Top = 538
+  Left = 1012
+  Height = 696
+  Top = 0
   Width = 316
+  Align = alBottom
+  Anchors = [akRight, akBottom]
   AutoSize = True
   BorderStyle = bsSingle
   BorderWidth = 5
   Caption = 'Numerki CMYK'
-  ClientHeight = 180
+  ClientHeight = 696
   ClientWidth = 316
-  FormStyle = fsSystemStayOnTop
+  DefaultMonitor = dmPrimary
+  FormStyle = fsStayOnTop
   Icon.Data = {
     3E42000000000100010040400000010020002842000016000000280000004000
     0000800000000100200000000000004000006400000064000000000000000000
@@ -543,17 +546,27 @@ object Form1: TForm1
     00005CADE50E000000005CADE50E000000005CADE50E000000005CADE50E0000
     0000
   }
+  OnActivate = ButtonZaladujNumeryClick
+  PopupMode = pmExplicit
   LCLVersion = '2.0.6.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 455
+    Top = 230
+    Width = 150
+    TabOrder = 28
+    Visible = False
+  end
   object Label1: TLabel
-    Left = 9
-    Height = 29
-    Top = 0
-    Width = 17
+    Left = 15
+    Height = 20
+    Top = 5
+    Width = 12
     Caption = 'C'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlue
-    Font.Height = -24
-    Font.Name = 'Arial'
+    Font.Height = -16
+    Font.Name = 'Arial Nova'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
@@ -561,15 +574,15 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 9
-    Height = 29
+    Left = 15
+    Height = 20
     Top = 24
-    Width = 21
+    Width = 14
     Caption = 'M'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clFuchsia
-    Font.Height = -24
-    Font.Name = 'Arial'
+    Font.Height = -16
+    Font.Name = 'Arial Nova'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
@@ -577,29 +590,31 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 9
-    Height = 29
-    Top = 48
-    Width = 15
+    Left = 15
+    Height = 20
+    Top = 45
+    Width = 10
     Caption = 'Y'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clYellow
-    Font.Height = -24
-    Font.Name = 'Arial'
+    Font.Height = -16
+    Font.Name = 'Arial Nova'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 9
-    Height = 29
-    Top = 72
-    Width = 17
+    Left = 16
+    Height = 20
+    Top = 69
+    Width = 11
     Caption = 'K'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlack
-    Font.Height = -24
-    Font.Name = 'Arial'
+    Font.Height = -16
+    Font.Name = 'Arial Nova'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
@@ -625,7 +640,7 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonCClick
+    OnKeyPress = nastepnyPoEnterze
     ParentFont = False
     TabOrder = 0
     Text = 'CCCCC'
@@ -641,7 +656,7 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonMClick
+    OnKeyPress = nastepnyPoEnterze
     ParentFont = False
     TabOrder = 1
     Text = 'MMMMM'
@@ -657,7 +672,7 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonYClick
+    OnKeyPress = nastepnyPoEnterze
     ParentFont = False
     TabOrder = 2
     Text = 'YYYYY'
@@ -673,7 +688,7 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonKClick
+    OnKeyPress = nastepnyPoEnterze
     ParentFont = False
     TabOrder = 3
     Text = 'KKKKK'
@@ -689,9 +704,9 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonRoClick
+    OnKeyPress = nastepnyPoEnterze
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 5
     Text = 'RORORO'
   end
   object ButtonC: TButton
@@ -708,7 +723,7 @@ object Form1: TForm1
     Font.Quality = fqDraft
     OnClick = ButtonCClick
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 13
   end
   object ButtonM: TButton
     Left = 216
@@ -724,7 +739,7 @@ object Form1: TForm1
     Font.Quality = fqDraft
     OnClick = ButtonMClick
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 14
   end
   object ButtonY: TButton
     Left = 216
@@ -740,7 +755,7 @@ object Form1: TForm1
     Font.Quality = fqDraft
     OnClick = ButtonYClick
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 15
   end
   object ButtonK: TButton
     Left = 216
@@ -756,7 +771,7 @@ object Form1: TForm1
     Font.Quality = fqDraft
     OnClick = ButtonKClick
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 16
   end
   object ButtonRo: TButton
     Left = 216
@@ -772,17 +787,17 @@ object Form1: TForm1
     Font.Quality = fqDraft
     OnClick = ButtonRoClick
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 18
   end
   object Label6: TLabel
-    Left = 9
-    Height = 26
-    Top = 96
-    Width = 14
+    Left = 16
+    Height = 20
+    Top = 89
+    Width = 11
     Caption = 'B'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clWhite
-    Font.Height = -21
+    Font.Height = -16
     Font.Name = 'Arial Nova'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -801,9 +816,9 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = ButtonRoClick
+    OnKeyPress = nastepnyPoEnterze
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 4
     Text = 'BBBBB'
   end
   object ButtonB: TButton
@@ -820,6 +835,150 @@ object Form1: TForm1
     Font.Quality = fqDraft
     OnClick = ButtonBClick
     ParentFont = False
+    TabOrder = 17
+  end
+  object EditCzerwona: TEdit
+    Left = 35
+    Height = 23
+    Top = 130
+    Width = 180
+    OnKeyPress = nastepnyPoEnterze
+    TabOrder = 6
+    Text = 'EditCzerwona'
+  end
+  object EditZielona: TEdit
+    Left = 35
+    Height = 23
+    Top = 150
+    Width = 180
+    OnKeyPress = nastepnyPoEnterze
+    TabOrder = 7
+    Text = 'EditZielona'
+  end
+  object EditZlota: TEdit
+    Left = 35
+    Height = 23
+    Top = 170
+    Width = 180
+    OnKeyPress = nastepnyPoEnterze
+    TabOrder = 8
+    Text = 'EditZlota'
+  end
+  object EditNiebieska: TEdit
+    Left = 35
+    Height = 23
+    Top = 190
+    Width = 180
+    OnKeyPress = nastepnyPoEnterze
+    TabOrder = 9
+    Text = 'EditNiebieska'
+  end
+  object EditZolta: TEdit
+    Left = 35
+    Height = 23
+    Top = 210
+    Width = 180
+    OnKeyPress = nastepnyPoEnterze
+    TabOrder = 10
+    Text = 'EditZolta'
+  end
+  object EditBrazowa: TEdit
+    Left = 35
+    Height = 23
+    Top = 230
+    Width = 180
+    OnKeyPress = nastepnyPoEnterze
     TabOrder = 11
+    Text = 'EditBrazowa'
+  end
+  object ButtonCzerwona: TButton
+    Left = 215
+    Height = 23
+    Top = 130
+    Width = 100
+    Caption = 'ButtonCzerwona'
+    OnClick = ButtonCzerwonaClick
+    TabOrder = 19
+  end
+  object ButtonZielona: TButton
+    Left = 215
+    Height = 23
+    Top = 150
+    Width = 100
+    Caption = 'ButtonZielona'
+    OnClick = ButtonZielonaClick
+    TabOrder = 20
+  end
+  object ButtonZlota: TButton
+    Left = 215
+    Height = 23
+    Top = 170
+    Width = 100
+    Caption = 'ButtonZlota'
+    OnClick = ButtonZlotaClick
+    TabOrder = 21
+  end
+  object ButtonNiebieska: TButton
+    Left = 215
+    Height = 23
+    Top = 190
+    Width = 100
+    Caption = 'ButtonNiebieska'
+    OnClick = ButtonNiebieskaClick
+    TabOrder = 22
+  end
+  object ButtonZolta: TButton
+    Left = 215
+    Height = 23
+    Top = 211
+    Width = 100
+    Caption = 'ButtonZolta'
+    OnClick = ButtonZoltaClick
+    TabOrder = 23
+  end
+  object ButtonBrazowa: TButton
+    Left = 215
+    Height = 23
+    Top = 230
+    Width = 100
+    Caption = 'ButtonBrazowa'
+    OnClick = ButtonBrazowaClick
+    TabOrder = 24
+  end
+  object EditSzara: TEdit
+    Left = 35
+    Height = 23
+    Top = 250
+    Width = 180
+    OnKeyPress = nastepnyPoEnterze
+    TabOrder = 12
+    Text = 'EditSzara'
+  end
+  object ButtonSzara: TButton
+    Left = 215
+    Height = 23
+    Top = 250
+    Width = 100
+    Caption = 'ButtonSzara'
+    OnClick = ButtonSzaraClick
+    TabOrder = 25
+  end
+  object ButtonZaladujNumery: TButton
+    Left = 65
+    Height = 25
+    Top = 280
+    Width = 99
+    Caption = 'Zaladuj Numery'
+    OnClick = ButtonZaladujNumeryClick
+    TabOrder = 26
+  end
+  object ButtonZapiszNumery: TButton
+    Left = 180
+    Height = 25
+    Top = 280
+    Width = 104
+    Caption = 'Zapisz Numery'
+    OnClick = ButtonZapiszNumeryClick
+    TabOrder = 27
   end
 end

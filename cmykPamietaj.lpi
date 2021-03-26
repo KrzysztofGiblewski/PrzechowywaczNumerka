@@ -19,9 +19,9 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
-      <MajorVersionNr Value="1"/>
-      <RevisionNr Value="2"/>
-      <BuildNr Value="4"/>
+      <MajorVersionNr Value="2"/>
+      <RevisionNr Value="1"/>
+      <BuildNr Value="12"/>
       <Language Value="0415"/>
       <StringTable CompanyName="Krzysztof Giblewski" LegalCopyright="Krzysztof Giblewski" ProductName="Przechowywacz numerków"/>
     </VersionInfo>
