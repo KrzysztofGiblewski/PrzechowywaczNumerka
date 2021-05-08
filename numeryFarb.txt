@@ -1,26 +1,38 @@
-Kopiuj C
-4845454
-Kopiuj M
-54545
-Kopiuj Y
-12121212121212
+Kopiuj Cyan
+aaa
+Kopiuj Magenta
+aaa
+Kopiuj Yellow
+aaa
 Kopiuj Czarny
-41545454541
+aaa
 Kopiuj Biały
-1554454554
+aaa
 Rozjaśniacz
-555554545
+aaa
+Rozjaśniacz Raster
+aaa
 Kopiuj Czerwony
-5154554545455
+cccc
 Kopiuj Zielony
-555554545
-Kopiuj Złoty
-555554545
+5555
 Kopiuj Niebieski
-555554545
+5555
 Kopiuj Zółty
-2121212121
+zzzz
 Kopiuj Brązowy
-02121211212
+bbbb
 Kopiuj Szary
-12121212121212
+ssss
+Kopiuj fiolet
+888999888999
+Kopiuj złoty
+aaabialy
+Kopiuj 
+66666666666
+Kopiuj
+888999888999
+Kopiuj
+0000000000000
+Kopiuj
+1111111111111
