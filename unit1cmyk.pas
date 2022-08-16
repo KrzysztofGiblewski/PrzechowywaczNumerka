@@ -19,6 +19,7 @@ type
     Button4: TButton;
     Button5: TButton;
     Button6: TButton;
+    Button7: TButton;
     ButtonZapiszNumery: TButton;
     ButtonZaladujNumery: TButton;
     ButtonCzerwona: TButton;
@@ -36,11 +37,27 @@ type
     ButtonRo: TButton;
     CheckBox1: TCheckBox;
     Edit1: TEdit;
+    Edit10: TEdit;
+    Edit11: TEdit;
+    Edit12: TEdit;
+    Edit13: TEdit;
+    Edit14: TEdit;
+    Edit15: TEdit;
+    Edit16: TEdit;
+    Edit17: TEdit;
+    Edit18: TEdit;
+    Edit19: TEdit;
     Edit2: TEdit;
+    Edit20: TEdit;
+    Edit21: TEdit;
+    Edit22: TEdit;
+    Edit23: TEdit;
     Edit3: TEdit;
     Edit4: TEdit;
     Edit5: TEdit;
     Edit6: TEdit;
+    Edit8: TEdit;
+    Edit9: TEdit;
     EditSzara: TEdit;
     EditCzerwona: TEdit;
     EditZielona: TEdit;
@@ -63,6 +80,7 @@ type
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
     procedure ButtonZapiszNumeryClick(Sender: TObject);
     procedure ButtonCzerwonaClick(Sender: TObject);
     procedure ButtonZaladujNumeryClick(Sender: TObject);
@@ -79,6 +97,23 @@ type
     procedure ButtonRoClick(Sender: TObject);
     procedure ButtonYClick(Sender: TObject);
     procedure CheckBox1Change(Sender: TObject);
+    procedure Edit10Change(Sender: TObject);
+    procedure Edit11Change(Sender: TObject);
+    procedure Edit12Change(Sender: TObject);
+    procedure Edit13Change(Sender: TObject);
+    procedure Edit14Change(Sender: TObject);
+    procedure Edit15Change(Sender: TObject);
+    procedure Edit16Change(Sender: TObject);
+    procedure Edit17Change(Sender: TObject);
+    procedure Edit18Change(Sender: TObject);
+    procedure Edit19Change(Sender: TObject);
+    procedure Edit20Change(Sender: TObject);
+    procedure Edit21Change(Sender: TObject);
+    procedure Edit22Change(Sender: TObject);
+    procedure Edit23Change(Sender: TObject);
+    procedure Edit7Change(Sender: TObject);
+    procedure Edit8Change(Sender: TObject);
+    procedure Edit9Change(Sender: TObject);
     procedure EditBrazowaChange(Sender: TObject);
     procedure nastepnyPoEnterze(Sender: TObject; var Key: char);
     procedure Timer1Timer(Sender: TObject);
@@ -112,6 +147,8 @@ type
 var
   Form1: TForm1;
   numerekC,numerekM,numerekY,numerekK,numerekRo,stringZListy:string;
+  widoczne:boolean=false;
+  naiwerzku:boolean=false;
 
 implementation
 
@@ -231,6 +268,54 @@ begin
 
 end;
 
+procedure TForm1.Button7Click(Sender: TObject);
+
+begin
+  if widoczne=true then
+  begin
+  Form1.Edit8 .Visible:=false;
+  Form1.Edit9 .Visible:=false;
+  Form1.Edit10.Visible:=false;
+  Form1.Edit11.Visible:=false;
+  Form1.Edit12.Visible:=false;
+  Form1.Edit13.Visible:=false;
+  Form1.Edit14.Visible:=false;
+  Form1.Edit15.Visible:=false;
+  Form1.Edit16.Visible:=false;
+  Form1.Edit17.Visible:=false;
+  Form1.Edit18.Visible:=false;
+  Form1.Edit19.Visible:=false;
+  Form1.Edit20.Visible:=false;
+  Form1.Edit21.Visible:=false;
+  Form1.Edit22.Visible:=false;
+  Form1.Edit23.Visible:=false;
+  widoczne:=false;
+  Button7.Caption:='Edycja podpisu';
+  end else
+     begin
+         Form1.Edit8 .Visible:=true;
+         Form1.Edit9 .Visible:=true;
+         Form1.Edit10.Visible:=true;
+         Form1.Edit11.Visible:=true;
+         Form1.Edit12.Visible:=true;
+         Form1.Edit13.Visible:=true;
+         Form1.Edit14.Visible:=true;
+         Form1.Edit15.Visible:=true;
+         Form1.Edit16.Visible:=true;
+         Form1.Edit17.Visible:=true;
+         Form1.Edit18.Visible:=true;
+         Form1.Edit19.Visible:=true;
+         Form1.Edit20.Visible:=true;
+         Form1.Edit21.Visible:=true;
+         Form1.Edit22.Visible:=true;
+         Form1.Edit23.Visible:=true;
+        Button7.Caption:='Ukryj edycje';
+
+       widoczne:=true;
+     end
+
+end;
+
 procedure TForm1.nastepnyPoEnterze(Sender: TObject; var Key: char);
 begin
   if key=#13 then begin
@@ -241,6 +326,7 @@ end;
 end;
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
+  if  naiwerzku=true then
 form1.ShowOnTop;
 end;
 
@@ -342,11 +428,94 @@ end;
 procedure TForm1.CheckBox1Change(Sender: TObject);
 begin
   if CheckBox1.Checked=true then
-  Timer1.Enabled:=true
-  else
-  Timer1.Enabled:=false;
-
+  naiwerzku:=true
+  else naiwerzku:=false;
 end;
+
+procedure TForm1.Edit10Change(Sender: TObject);
+begin
+  Form1.ButtonY.Caption:='Kopiuj '+Edit10.Text;
+end;
+
+procedure TForm1.Edit11Change(Sender: TObject);
+begin
+  Form1.ButtonK.Caption:='Kopiuj '+Edit11.Text;
+end;
+
+procedure TForm1.Edit12Change(Sender: TObject);
+begin
+  Form1.ButtonB.Caption:='Kopiuj '+Edit12.Text;
+end;
+
+procedure TForm1.Edit13Change(Sender: TObject);
+begin
+  Form1.ButtonRo.Caption:='Kopiuj '+Edit13.Text;
+end;
+
+procedure TForm1.Edit14Change(Sender: TObject);
+begin
+  Form1.ButtonCzerwona.Caption:='Kopiuj '+Edit14.Text;
+end;
+
+procedure TForm1.Edit15Change(Sender: TObject);
+begin
+  Form1.ButtonZielona.Caption:='Kopiuj '+Edit15.Text;
+end;
+
+procedure TForm1.Edit16Change(Sender: TObject);
+begin
+  ButtonZlota.Caption:='Kopiuj '+Edit16.Text;
+end;
+
+procedure TForm1.Edit17Change(Sender: TObject);
+begin
+   Form1.ButtonNiebieska.Caption:='Kopiuj '+Edit17.Text;
+end;
+
+procedure TForm1.Edit18Change(Sender: TObject);
+begin
+   Form1.ButtonZolta.Caption:='Kopiuj '+Edit18.Text;
+end;
+
+procedure TForm1.Edit19Change(Sender: TObject);
+begin
+   Form1.ButtonBrazowa.Caption:='Kopiuj '+Edit19.Text;
+end;
+
+procedure TForm1.Edit20Change(Sender: TObject);
+begin
+     Form1.ButtonSzara.Caption:='Kopiuj '+Edit20.Text;
+end;
+
+procedure TForm1.Edit21Change(Sender: TObject);
+begin
+   Form1.Button1.Caption:='Kopiuj '+Edit21.Text;
+end;
+
+procedure TForm1.Edit22Change(Sender: TObject);
+begin
+       Form1.Button2.Caption:='Kopiuj '+Edit22.Text;
+end;
+
+procedure TForm1.Edit23Change(Sender: TObject);
+begin
+  Form1.button3.Caption:='Kopiuj '+Edit23.Text;
+end;
+
+procedure TForm1.Edit7Change(Sender: TObject);
+begin
+end;
+
+procedure TForm1.Edit8Change(Sender: TObject);
+begin
+  Form1.ButtonC.Caption:='Kopiuj '+Edit8.Text;
+end;
+
+procedure TForm1.Edit9Change(Sender: TObject);
+begin
+  Form1.ButtonM.Caption:='Kopiuj '+Edit9.Text;
+end;
+
 procedure TForm1.EditBrazowaChange(Sender: TObject);
 begin
 EditBrazowa.SelectAll;
@@ -397,8 +566,6 @@ begin
 
     ButtonSzara.Caption    := Memo1.Lines.ValueFromIndex[24];
     EditSzara.Text         := Memo1.Lines.ValueFromIndex[25];
-
-
 
     Button1.Caption    := Memo1.Lines.ValueFromIndex[26];
     Edit1.Text         := Memo1.Lines.ValueFromIndex[27];

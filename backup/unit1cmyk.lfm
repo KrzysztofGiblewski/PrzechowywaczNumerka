@@ -1,16 +1,17 @@
 object Form1: TForm1
-  Left = 1042
-  Height = 421
-  Top = 150
-  Width = 324
+  Left = 800
+  Height = 439
+  Top = 24
+  Width = 443
   Align = alRight
   Anchors = [akRight, akBottom]
+  AutoSize = True
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   BorderWidth = 5
   Caption = 'Numerki CMYK'
-  ClientHeight = 421
-  ClientWidth = 324
+  ClientHeight = 439
+  ClientWidth = 443
   DragMode = dmAutomatic
   FormStyle = fsSystemStayOnTop
   Icon.Data = {
@@ -551,10 +552,10 @@ object Form1: TForm1
   LCLVersion = '2.0.6.0'
   Scaled = False
   object Memo1: TMemo
-    Left = -215
-    Height = 565
+    Left = 30
+    Height = 365
     Hint = 'tu wpisz za pomocą skanera nr farby'
-    Top = 140
+    Top = 44
     Width = 365
     ParentShowHint = False
     ShowHint = True
@@ -666,7 +667,7 @@ object Form1: TForm1
     Height = 23
     Hint = 'Kliknięcie zapamiętuje numer farby który '#13#10'można potem wkleić do unifirmy skrutem '#13#10'"ctr+v" lub prawym klawiszem myszy'
     Top = 3
-    Width = 110
+    Width = 150
     Caption = 'Kopiuj nr cyjan'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlack
@@ -685,7 +686,7 @@ object Form1: TForm1
     Left = 210
     Height = 23
     Top = 24
-    Width = 110
+    Width = 150
     Caption = 'Kopiuj nr magenta'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlack
@@ -704,7 +705,7 @@ object Form1: TForm1
     Left = 210
     Height = 23
     Top = 45
-    Width = 110
+    Width = 150
     Caption = 'Kopiuj nr żółty'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlack
@@ -723,7 +724,7 @@ object Form1: TForm1
     Left = 210
     Height = 23
     Top = 66
-    Width = 110
+    Width = 150
     Caption = 'Kopiuj nr czarny'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlack
@@ -741,7 +742,7 @@ object Form1: TForm1
     Left = 210
     Height = 23
     Top = 108
-    Width = 110
+    Width = 150
     Caption = 'Kopiuj ten nr'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlack
@@ -779,7 +780,7 @@ object Form1: TForm1
     Left = 210
     Height = 23
     Top = 87
-    Width = 110
+    Width = 150
     Caption = 'Kopiuj biały'
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clBlack
@@ -873,66 +874,108 @@ object Form1: TForm1
   end
   object ButtonCzerwona: TButton
     Left = 210
-    Height = 23
-    Top = 130
-    Width = 110
+    Height = 25
+    Top = 128
+    Width = 150
     Caption = 'ButtonCzerwona'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = ButtonCzerwonaClick
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 20
   end
   object ButtonZielona: TButton
     Left = 210
-    Height = 23
+    Height = 25
     Top = 150
-    Width = 110
+    Width = 150
     Caption = 'ButtonZielona'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = ButtonZielonaClick
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 21
   end
   object ButtonZlota: TButton
     Left = 210
-    Height = 23
+    Height = 25
     Top = 170
-    Width = 110
+    Width = 150
     Caption = 'ButtonZlota'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = ButtonZlotaClick
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 22
   end
   object ButtonNiebieska: TButton
     Left = 210
-    Height = 23
+    Height = 25
     Top = 190
-    Width = 110
+    Width = 150
     Caption = 'ButtonNiebieska'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = ButtonNiebieskaClick
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 23
   end
   object ButtonZolta: TButton
     Left = 210
-    Height = 23
+    Height = 25
     Top = 211
-    Width = 110
+    Width = 150
     Caption = 'ButtonZolta'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = ButtonZoltaClick
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 24
   end
   object ButtonBrazowa: TButton
     Left = 210
-    Height = 23
+    Height = 25
     Top = 230
-    Width = 110
+    Width = 150
     Caption = 'ButtonBrazowa'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = ButtonBrazowaClick
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 25
@@ -952,21 +995,28 @@ object Form1: TForm1
   end
   object ButtonSzara: TButton
     Left = 210
-    Height = 23
+    Height = 25
     Hint = 'Kliknięcie zapamiętuje numer farby który '#13#10'można potem wkleić do unifirmy skrutem '#13#10'"ctr+v" lub prawym klawiszem myszy'
     Top = 250
-    Width = 110
+    Width = 150
     Caption = 'ButtonSzara'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = ButtonSzaraClick
     OnKeyPress = nastepnyPoEnterze
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 26
   end
   object ButtonZaladujNumery: TButton
-    Left = 95
+    Left = 75
     Height = 25
-    Top = 45
+    Top = 40
     Width = 115
     Caption = 'Zaladuj Numery'
     OnClick = ButtonZaladujNumeryClick
@@ -974,10 +1024,10 @@ object Form1: TForm1
     Visible = False
   end
   object ButtonZapiszNumery: TButton
-    Left = 40
+    Left = 10
     Height = 20
     Hint = 'Zapisuje wszystkie numery w pliky '#13#10'tekstowym "numeryFarb.txt" który '#13#10'można sobie edytować, Znajduje się'#13#10'obok pliku exe'
-    Top = 395
+    Top = 415
     Width = 149
     Caption = 'Zapisz Numery w pliku txt'
     OnClick = ButtonZapiszNumeryClick
@@ -990,14 +1040,12 @@ object Form1: TForm1
     Height = 19
     Hint = 'To powoduje że program nie chowa się pod unifirmą ale '#13#10'może przeszkadzać w jej obsłudze - WYSTARCZY '#13#10'odchaczyć "ptaszek"'
     Top = 390
-    Width = 182
+    Width = 125
     AutoSize = False
     Caption = 'Utrzymuj program'
-    Checked = True
     OnChange = CheckBox1Change
     ParentShowHint = False
     ShowHint = True
-    State = cbChecked
     TabOrder = 29
   end
   object Label7: TLabel
@@ -1105,57 +1153,412 @@ object Form1: TForm1
   end
   object Button1: TButton
     Left = 210
-    Height = 21
+    Height = 25
     Top = 270
-    Width = 110
+    Width = 150
     Caption = 'Button1'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = Button1Click
+    ParentFont = False
     TabOrder = 36
   end
   object Button2: TButton
     Left = 210
-    Height = 21
+    Height = 25
     Top = 290
-    Width = 110
+    Width = 150
     Caption = 'Button2'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = Button2Click
+    ParentFont = False
     TabOrder = 37
   end
   object Button3: TButton
     Left = 210
-    Height = 21
+    Height = 25
     Top = 310
-    Width = 110
+    Width = 150
     Caption = 'Button3'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = Button3Click
+    ParentFont = False
     TabOrder = 38
   end
   object Button4: TButton
     Left = 210
-    Height = 21
+    Height = 25
     Top = 330
-    Width = 110
+    Width = 150
     Caption = 'Button4'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = Button4Click
+    ParentFont = False
     TabOrder = 39
   end
   object Button5: TButton
     Left = 210
-    Height = 21
+    Height = 25
     Top = 350
-    Width = 110
+    Width = 150
     Caption = 'Button5'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = Button5Click
+    ParentFont = False
     TabOrder = 40
   end
   object Button6: TButton
     Left = 210
-    Height = 21
+    Height = 25
     Top = 370
-    Width = 110
+    Width = 150
     Caption = 'Button6'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = Button6Click
+    ParentFont = False
     TabOrder = 41
+  end
+  object Edit8: TEdit
+    Left = 355
+    Height = 20
+    Top = 5
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit8Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 42
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit9: TEdit
+    Left = 355
+    Height = 20
+    Top = 26
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit9Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 43
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit10: TEdit
+    Left = 355
+    Height = 20
+    Top = 48
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit10Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 44
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit11: TEdit
+    Left = 355
+    Height = 20
+    Top = 69
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit11Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 45
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit12: TEdit
+    Left = 355
+    Height = 20
+    Top = 90
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit12Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 46
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit13: TEdit
+    Left = 355
+    Height = 20
+    Top = 111
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit13Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 47
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit14: TEdit
+    Left = 355
+    Height = 20
+    Top = 130
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit14Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 48
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit15: TEdit
+    Left = 355
+    Height = 20
+    Top = 153
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit15Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 49
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit16: TEdit
+    Left = 355
+    Height = 20
+    Top = 173
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit16Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 50
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit17: TEdit
+    Left = 355
+    Height = 20
+    Top = 193
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit17Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 51
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit18: TEdit
+    Left = 355
+    Height = 20
+    Top = 213
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit18Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 52
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit19: TEdit
+    Left = 355
+    Height = 20
+    Top = 233
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit19Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 53
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit20: TEdit
+    Left = 355
+    Height = 20
+    Top = 253
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit20Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 54
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit21: TEdit
+    Left = 355
+    Height = 20
+    Top = 271
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit21Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 55
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit22: TEdit
+    Left = 355
+    Height = 20
+    Top = 291
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit22Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 56
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Edit23: TEdit
+    Left = 355
+    Height = 20
+    Top = 311
+    Width = 80
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clBlack
+    Font.Height = -9
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit23Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 57
+    TextHint = 'Zmien podpis'
+    Visible = False
+  end
+  object Button7: TButton
+    Left = 199
+    Height = 19
+    Top = 416
+    Width = 120
+    Caption = 'Edycja podpisu'
+    OnClick = Button7Click
+    TabOrder = 58
   end
   object Timer1: TTimer
     Interval = 3000
